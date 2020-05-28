@@ -1,15 +1,22 @@
+const home_url = "https://api.covid19api.com";
+const countries_url = "https://api.covid19api.com/countries";
+const country_url = "https://api.covid19api.com/live/country/";
+let countries_slugs = [];
+
 $(document).ready(() => {
-  getData();
+  //getData();
+  getCountries();
+  getCountryData();
 });
 
 function getData() {
   axios
-    .get("https://api.covid19api.com/summary")
+    .get(`${home_url}/summary`)
     .then((res) => {
       let global = res.data.Global;
       console.log(global);
 
-      let ouput = `
+      let output = `
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
@@ -43,7 +50,26 @@ function getData() {
         </div>
       `;
 
-      $("#global-data").html(ouput);
+      $("#global-data").html(output);
     })
     .catch((err) => console.log(err));
 }
+
+function getCountries() {
+  axios.get(`${countries_url}`).then((res) => {
+    let countries = res.data;
+
+    for (let i = 0; i < countries.length; i++) {
+      let slug = countries[i].Slug;
+    }
+  });
+}
+
+function getCountryData(slug) {
+  axios.get(`https://api.covid19api.com/total/country/${slug}`).then((res) => {
+    let output = "";
+    let data = res.data;
+  });
+}
+
+//console.log(countries_slugs);
