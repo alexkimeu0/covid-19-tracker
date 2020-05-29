@@ -275,7 +275,7 @@ function getData() {
 
                 <div class="card-body">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 my-1">
                             <ul class="list-group">
                                 <li class="list-group-item heading">Global Total</li>
                                 <li class="list-group-item"><strong>Total Confirmed:</strong>&nbsp;${global.TotalConfirmed}</li>
@@ -284,7 +284,7 @@ function getData() {
                             </ul>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-6 my-1">
                             <ul class="list-group">  
                                 <li class="list-group-item heading">Global New</li>  
                                 <li class="list-group-item"><strong>New Confirmed:</strong>&nbsp;${global.NewConfirmed}</li>

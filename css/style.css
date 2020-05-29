@@ -92,3 +92,9 @@ section {
 #footer i {
   color: crimson;
 }
+
+@media (max-width: 1200px) {
+  #global-data .card col-md-6 {
+    margin: 3rem 0;
+  }
+}
