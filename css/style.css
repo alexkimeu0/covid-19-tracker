@@ -71,6 +71,10 @@ nav {
   color: #ffffff;
 }
 
+#countries .col-md-4 {
+  margin-bottom: 1rem;
+}
+
 section {
   margin-bottom: 2rem;
 }

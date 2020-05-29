@@ -319,19 +319,12 @@ function getCountryData() {
 
         output += `
           <div class="col-md-4">
-            <div class="card">
-              <div class="card-header">
-                <h5 class="text-center"><strong>Country:</strong>&nbsp;${slugs[i]}</h5>
-              </div>  
-              <div class="card-body">
               <ul class="list-group">
+                  <li class="list-group-item heading"><strong>Country:</strong>&nbsp;${slugs[i]}</li>
                   <li class="list-group-item"><strong>Confirmed:</strong>&nbsp;${countries_data.confirmed}</li>
                   <li class="list-group-item"><strong>Deaths:</strong>&nbsp;${countries_data.deaths}</li>
                   <li class="list-group-item"><strong>Recovered:</strong>&nbsp;${countries_data.recovered}</li>                                
               </ul>
-
-              </div>          
-            </div>
           </div>          
           `;
 
