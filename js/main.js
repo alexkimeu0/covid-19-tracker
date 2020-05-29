@@ -4,7 +4,7 @@ const country_url = "https://api.covid19api.com/live/country/";
 let countries_slugs = [];
 
 $(document).ready(() => {
-  //getData();
+  getData();
   getCountries();
   getCountryData();
 });

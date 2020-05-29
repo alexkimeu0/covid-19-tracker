@@ -18,6 +18,18 @@ body {
   font-weight: bold;
 }
 
+#global-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#global-data img {
+  margin-top: 2rem;
+}
+
 .card {
   background-color: #ecf0f1;
 }
@@ -26,6 +38,10 @@ body {
   background-color: #2c3e50;
   font-weight: bold;
   color: #ffffff;
+}
+
+.card-body {
+  color: #000000;
 }
 
 .card ul li {
