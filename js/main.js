@@ -258,7 +258,6 @@ const counties = [];
 $(document).ready(() => {
   getCountryData();
   getData();
-  getFooter();
 });
 
 function getData() {
@@ -331,16 +330,4 @@ function getCountryData() {
         $("#countries").html(output);
       });
   }
-}
-
-function getFooter() {
-  let output = `<p><span><i class="fas fa-exclamation-triangle fa-2x"></i></span><br>I realized the data pulled from the API I used is not upto date.
-  <br>
-  I might consider looking for an upto date API later. Also not all countries are presented. 
-  <br>
-  But for now, this is good enough.
-  <br>
-  I just did this for fun-:)<br>
-  Alex&nbsp;<i class="fas fa-heart"></i></p>`;
-  $("#footer").html(output);
 }

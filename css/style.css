@@ -79,25 +79,6 @@ section {
   margin-bottom: 2rem;
 }
 
-#footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: #2c3e50;
-  padding: 0.5rem;
-  color: #000000;
-}
-
-#footer span {
-  font-weight: bold;
-  color: crimson;
-}
-
-#footer i {
-  color: crimson;
-}
-
 @media (max-width: 1200px) {
   #global-data .card col-md-6 {
     margin: 3rem 0;
